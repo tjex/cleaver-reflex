@@ -1,0 +1,38 @@
+body {
+  background-color: #222;
+  color: #eee;
+  font-family: Inter Medium;
+}
+
+h1, h2, h3 {
+  font-size: 1rem;
+  /* font-weight: bold; */
+  /* font-style: italic; */
+}
+
+pre code {
+  color: #ccc;
+  font-size: 0.9rem;
+  font-family: Hack Nerd Font Mono;
+}
+
+.slide {
+  background-color: inherit;
+}
+
+.keyword {
+  color: #0086b3 !important;
+  font-weight: inherit !important;
+}
+
+.tag {
+  color: #900 !important;
+}
+
+code {
+  background-color: inherit;
+}
+
+em {
+  border-bottom: 1px solid #666;
+}
