@@ -10,4 +10,4 @@ output: theme.html
 theme: tjex/cleaver-reflex
 ```
 
-See [here](https://github.com/jdan/cleaver#specifying-themes) for further info and alternate import options.
+See [here](https://github.com/jdan/cleaver/wiki/Theme-Index) for further info and alternate import options.
