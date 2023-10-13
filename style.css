@@ -1,11 +1,9 @@
-
 :root {
   --font-family: system-ui, -apple-system, "Segoe UI", "Helvetica", "Roboto", "Ubuntu",
     "Cantarell", "Oxygen-Sans", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", "Noto Color Emoji";
   --line-height: 1.6;
-  --font-weight: 400;
-  --font-size: 1rem;
+  --font-size: 1.5rem;
   --font-small: 0.85rem;
   --border-radius: 0.25rem;
   --border-width: 1px;
@@ -61,6 +59,7 @@
   --table-row-stripped-background-color: rgba(115, 130, 140, 0.05);
   --code-background-color: #1d2931;
   --code-color: var(--muted-color);
+  --code-weight: 400;
   --code-kbd-background-color: var(--contrast);
   --code-kbd-color: var(--contrast-inverse);
   --code-tag-color: hsl(330, 30%, 50%);
@@ -69,9 +68,26 @@
   --code-comment-color: #4d606d;
 }
 
+
+.slide {
+  background-color: inherit;
+}
+
+/* if these are not present in the user .css,
+ * cleaver will apply its defaults */
+.slide-content {
+    overflow: hidden;
+    width: 1280px;
+    height: 1000px;
+    margin: 80px auto 0 auto;
+    padding: 30px;
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+}
+
 body {
   background-color: var(--background-color);
-  color: #ccc;
+  color: #ddd;
   font-family: Inter Medium;
 }
 
@@ -91,27 +107,21 @@ h3 {
   font-size: 3rem; 
 }
 
+ul li {
+  list-style-type: "―";
+  padding-left: 0.6rem;
+}
+
+ol li {
+  margin-left: 1.35rem;
+  padding-left: 0.4rem;
+}
+
 pre code {
   color: var(--color);
   font-size: 1rem;
   font-family: Hack Nerd Font Mono;
 }
-
-.slide {
-  background-color: inherit;
-}
-
-.slide-content {
-    overflow: hidden;
-    width: 1080px;
-    height: 720px;
-    margin: 80px auto 0 auto;
-    padding: 30px;
-    font-weight: 100;
-    font-size: 1.5rem;
-    line-height: 1.375;
-}
-
 
 .keyword {
   color: #0086b3 !important;
@@ -146,7 +156,7 @@ kbd {
   border-radius: var(--border-radius);
   background: var(--code-background-color);
   color: var(--code-color);
-  font-weight: var(--font-weight);
+  font-weight: var(--code-weight);
   line-height: initial;
 }
 
@@ -171,7 +181,7 @@ pre > code {
 
 code b {
   color: var(--code-tag-color);
-  font-weight: var(--font-weight);
+  font-weight: var(--code-weight);
 }
 code i {
   color: var(--code-property-color);
@@ -194,12 +204,14 @@ em {
 
 blockquote {
   display: block;
+  color: var(--secondary);
   margin: var(--typography-spacing-vertical) 0;
-  padding: var(--spacing);
+  padding-left: var(--spacing);
+  padding-bottom: calc(var(--spacing) * 0.15);
+  padding-top: calc(var(--spacing) * 0.15);
   border-right: none;
   border-left: 0.25rem solid var(--blockquote-border-color);
   border-inline-start: 0.25rem solid var(--blockquote-border-color);
   border-inline-end: none;
 }
-
 
