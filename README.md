@@ -16,6 +16,7 @@ or simply clone down the repo and put a local path in the `theme:` field.
 title: Theme Example
 output: theme.html
 theme: ~/presentations/foo-2023/style.css
+```
 
 See [here](https://github.com/jdan/cleaver/wiki/Theme-Index) for further info and alternate import options.
 
