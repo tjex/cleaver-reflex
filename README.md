@@ -10,4 +10,17 @@ output: theme.html
 theme: tjex/cleaver-reflex
 ```
 
+or simply clone down the repo and put a local path in the `theme:` field.
+
+```text
+title: Theme Example
+output: theme.html
+theme: ~/presentations/foo-2023/style.css
+
 See [here](https://github.com/jdan/cleaver/wiki/Theme-Index) for further info and alternate import options.
+
+## Preview
+
+![title-page](img/example-title.png)
+
+![slide](img/example-slide.png)
